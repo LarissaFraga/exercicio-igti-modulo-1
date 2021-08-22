@@ -1,0 +1,64 @@
+$purple-med: rgb(175, 43, 207)
+$purple-dark: rgb(113, 0, 128)
+$purple-light: rgb(221, 175, 252)
+
+body
+    background: lightgrey
+    margin: 0 
+
+main
+    width: 1200px
+    margin: 0 auto
+
+header
+    nav
+        background-color: $purple-med
+        display: flex
+        justify-content: space-evenly
+        padding: 20px
+
+        a
+            text-decoration: none
+            color: white
+
+    h1
+        text-align: center
+
+#about
+    display: flex
+
+    #about__photo
+        max-width: 200px
+        height: auto
+
+    #about__text-cnt
+        background-color: white
+        padding: 50px        
+
+#quote
+    background-color: $purple-dark
+    text-align: center
+    color: white
+    padding: 20px 0
+
+    #quote__cite
+        font-size: 1.5em
+
+#job-exp
+    background-color: rgb(236, 236, 236)
+
+    #job-exp__experience  
+        .job-exp__jobs
+            background-color: $purple-light
+            .job-exp__company-logo
+                max-width: 100px
+                height: auto
+
+    #job-exp__skills
+        background-color: white
+
+#education
+    #education__college
+        background-color: white
+    #education__others
+        background-color: $purple-light

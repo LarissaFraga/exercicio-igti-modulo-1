@@ -1,0 +1,68 @@
+body {
+  background: lightgrey;
+  margin: 0;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header nav {
+  background-color: #af2bcf;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  text-align: center;
+}
+
+#about {
+  display: flex;
+}
+#about #about__photo {
+  max-width: 200px;
+  height: auto;
+}
+#about #about__text-cnt {
+  background-color: white;
+  padding: 50px;
+}
+
+#quote {
+  background-color: #710080;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+#quote #quote__cite {
+  font-size: 1.5em;
+}
+
+#job-exp {
+  background-color: #ececec;
+}
+#job-exp #job-exp__experience .job-exp__jobs {
+  background-color: #ddaffc;
+}
+#job-exp #job-exp__experience .job-exp__jobs .job-exp__company-logo {
+  max-width: 100px;
+  height: auto;
+}
+#job-exp #job-exp__skills {
+  background-color: white;
+}
+
+#education #education__college {
+  background-color: white;
+}
+#education #education__others {
+  background-color: #ddaffc;
+}
+
+/*# sourceMappingURL=style.css.map */
