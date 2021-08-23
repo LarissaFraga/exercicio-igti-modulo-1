@@ -1,23 +1,24 @@
 $purple-med: rgb(175, 43, 207)
 $purple-dark: rgb(113, 0, 128)
 $purple-light: rgb(221, 175, 252)
-$pad10: 10px
 
 body
     background: lightgrey
     margin: 0 
 
 main
-    width: 1200px
+    max-width: 1200px
     margin: 0 auto
     display: grid
     column-gap: 10px
     row-gap: 10px
     grid-template-columns: (4, 1f)
     grid-template-rows: auto
-    grid-template-areas: "about about about about" "quote quote quote quote" "job-exp job-exp job-exp skills" "education education extracurricular extracurricular"
+    grid-template-areas: "main-title main-title main-title main-title" "about about about about" "quote quote quote quote" "job-exp job-exp job-exp skills" "education education extracurricular extracurricular"
 
 header
+    position: sticky
+    top: 0
     nav
         background-color: $purple-med
         display: flex
@@ -28,8 +29,9 @@ header
             text-decoration: none
             color: white
 
-    h1
-        text-align: center
+#main-title
+    grid-area: main-title
+    text-align: center
 
 #about
     grid-area: about
@@ -59,12 +61,27 @@ header
     padding: 20px
 
     #job-exp__experience
+        display: grid
+        grid-template-columns: (2, 1fr)
+        grid-template-rows: auto
+        column-gap: 10px
+        row-gap: 10px
+        grid-template-areas: "job1 job1 job2 job2"
+
         .job-exp__jobs
+            border-radius: 10px
+            padding: 10px
             background-color: $purple-light
             .job-exp__company-logo
                 max-width: 100px
                 height: auto
 
+        #job-exp__job1
+            grid-area: job1
+            text-align: center
+        #job-exp__job2
+            grid-area: job2
+            text-align: center
 #skills
     grid-area: skills
     background-color: white
@@ -97,3 +114,26 @@ footer
     #footer__email-phone
         p
             margin: 0
+
+@media (max-width: 480px) 
+    main
+        grid-template-columns: 100%
+        grid-template-areas: "main-title" "about" "quote" "job-exp" "skills" "education" "extracurricular"
+
+    #about
+        flex-flow: column wrap
+        justify-content: center
+        
+        #about__photo
+            max-width: 250px
+            margin: 0 auto
+
+        #about__text-cnt
+            padding: 20px
+    #job-exp
+        #job-exp__experience
+            grid-template-columns: 100%
+            grid-template-areas: "job1" "job2"
+
+    #footer
+        flex-flow: column wrap
