@@ -1,130 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portifólio</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href=#about>Sobre mim</a>
-            <a href=#job-exp>Experiência de trabalho</a>
-            <a href=#education>Início</a>
-            <a href=#footer>Contato</a>
-        </nav>
+      <nav>
+        <a href="#main-title">Início</a>
+        <a href="#about">Sobre mim</a>
+        <a href="#job-exp">Experiência de trabalho</a>
+        <a href="#footer">Contato</a>
+      </nav>
     </header>
     <main>
-        <h1 id="main-title">Meu Portifólio</h1>
-        <section id="about">
-            <img alt="Foto de perfil da Larissa" id="about__photo" src="src/img/foto_igti.jpg" />
-            <div id="about__text-cnt">
-                <h2>Sobre mim</h2>
-                <p>Faço Engenharia de Software na UFMS, estou estudando desenvolvimento front-end, pois é a área que
-                    mais gosto. Atualmente faço estágio na área e estou a procura de novas oportunidades, este projeto
-                    foi
-                    desenvolvido durante o Bootcamp de frontend do IGTI.</p>
-            </div>
-        </section>
-        <section id="quote">
-            <cite id="quote__cite">"Você nunca será velho demais para sonhar um novo sonho"</cite>
-            <p id="quote__author">- C. S. Lewis</p>
-        </section>
-        <section id="job-exp">
-            <h2>Experiência de trabalho</h2>
-            <div id="job-exp__experience">
-                <div class="job-exp__jobs" id="job-exp__job1">
-                    <img src="src/img/harsoft.png" class="job-exp__company-logo"
-                        alt="logo da empresa Harsoft Informática" />
-                    <h3>Harsoft Informática</h3>
-                    <p> programação em sistemas de controle de vendas e estoque utilizando Delphi,
-                        manutenção de código, desenvolvimento de novas funcionalidades, criação de relatórios
-                        em Fast Report, uso de banco de dados Firebird, neste caso eram feitas bastante consultas
-                        para relatórios. Praticava o uso de metodologias ágeis, como Scrum, além disso também
-                        utilizava git e gitlab para versionamento, já utilizei o trello como ferramenta de controle de
-                        tarefas.
-                    </p>
-                </div>
-                <div class="job-exp__jobs" id="job-exp__job2">
-                    <img src="src/img/rede_tendencia.png" class="job-exp__company-logo"
-                        alt="logo da empresa Rede Tendência" />
-                    <h3>Rede Tendência</h3>
-                    <p> desenvolvimento e manutenção do sistema de gestão de vendas em Java,
-                        utilizando o framework JSF, além de desenvolvimento e manutenção de APIs Java com
-                        Spring Boot e JPA. Manipulação de banco de dados Oracle e PL/SQL, criação e
-                        manutenção de tabelas, rotinas, pacotes, entre outros processos relacionados a banco de
-                        dados. Faço o uso de metodologias ágeis, como Scrum, fazendo o uso de alguns
-                        elementos como planning poker, retrospectiva, planejamento, daily, entre outros. Além disso
-                        também utilizo git e gitlab para versionamento, já utilizei o taiga como ferramenta de
-                        controle de tarefas, atualmente uso o youtrack .
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <h3>Programação</h3>
-            <ul>
-                <li>Vue</li>
-                <li>Java</li>
-                <li>PL/SQL</li>
-                <li>Deplhi</li>
-            </ul>
-            <h3>Softwares</h3>
-            <ul>
-                <li>VS Code</li>
-                <li>Intellij</li>
-                <li>Figma</li>
-                <li>Pacote Office</li>
-            </ul>
-            <h3>Línguas estrangeiras</h3>
-            <ul>
-                <li>Inglês</li>
-            </ul>
-        </section>
+      <h1 id="main-title">Meu Portifólio</h1>
+      <section id="about">
+        <img
+          alt="Foto de perfil da Larissa"
+          id="about__photo"
+          src="src/img/foto_igti.jpg"
+        />
+        <div id="about__text-cnt">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou formada em Engenharia de Software pela UFMS e atualmente estou
+            fazendo minha pós graduação em Desenvolvimento Front-end pelo IGTI.
+            Trabalho diariamente com ReactJS e já utilizei VueJs em vários
+            projetos pessoais e da faculdade, além disso o meu foco atual é
+            desenvolvimento Front-End.
+          </p>
+        </div>
+      </section>
+      <section id="quote">
+        <cite id="quote__cite"
+          >"Você nunca será velho demais para sonhar um novo sonho"</cite
+        >
+        <p id="quote__author">- C. S. Lewis</p>
+      </section>
+      <section id="job-exp">
+        <h2>Experiência de trabalho</h2>
+        <div id="job-exp__experience">
+          <div class="job-exp__jobs" id="job-exp__job2">
+            <img
+              src="src/img/rede_tendencia.png"
+              class="job-exp__company-logo"
+              alt="logo da empresa Projedata"
+            />
+            <h3>Rede Tendência</h3>
+            <p>
+              Período: dezembro de 2020 – outubro de 2021. Campo Grande, Mato
+              Grosso do Sul, Brasil Atividades: desenvolvimento e manutenção do
+              sistema de gestão de vendas em Java, utilizando o framework JSF,
+              além de desenvolvimento e manutenção de APIs Java com Spring Boot
+              e JPA. Manipulação de banco de dados Oracle e PL/SQL, criação e
+              manutenção de tabelas, rotinas, pacotes, entre outros processos
+              relacionados a banco de dados. Fiz o uso de metodologias ágeis,
+              como Scrum, fazendo o uso de alguns elementos como planning poker,
+              retrospectiva, planejamento, daily, entre outros. Além disso
+              também utilizei git e gitlab para versionamento.
+            </p>
+          </div>
+          <div class="job-exp__jobs" id="job-exp__job3">
+            <img
+              src="src/img/projedata.png"
+              class="job-exp__company-logo"
+              alt="logo da empresa Projedata"
+            />
+            <h3>Projedata</h3>
+            <p>
+              Período: outubro de 2021 - dezembro de 2021. São Ludgero, Santa
+              Catarina, Brasil Atividades: manutenção do sistema de controle de
+              produção na fábrica, no setor industrial, usando Oracle Forms e
+              Reports, migração do sistema para a web usando Java no backend,
+              manipulação de banco de dados Oracle e PL/SQL.
+            </p>
+          </div>
+          <div class="job-exp__jobs" id="job-exp__job3">
+            <img
+              src="src/img/mv.png"
+              class="job-exp__company-logo"
+              alt="logo da empresa MV"
+            />
+            <h3>MV</h3>
+            <p>
+              eríodo: janeiro de 2022 - atualmente Recife, Ceará, Brasil
+              Atividades: Desenvolvimento em ReactJS com TypeScript no time de
+              saúde pública, trabalho nos projetos de vigilância sanitária e
+              monitoramento estatístico. É feito o uso da biblioteca “Chartjs”
+              para construção de gráficos e “Yup” para validação de formulários.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <h3>Programação</h3>
+        <ul>
+          <li>ReactJS</li>
+          <li>VueJs</li>
+          <li>Desenvolvimento web (HTML5, CSS3)</li>
+          <li>JavaScript / Typescript</li>
+          <li>SQL</li>
+          <li>API Rest</li>
+          <li>Git</li>
+        </ul>
+        <h3>Softwares</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>Intellij</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Línguas estrangeiras</h3>
+        <ul>
+          <li>Inglês</li>
+        </ul>
+      </section>
 
-        <section id="education">
-            <h2>Formação Acadêmica</h2>
-            <h3>UFMS</h3>
-            <ul>
-                <li>Nível: graduação</li>
-                <li>Curso: Engenharia de Software</li>
-                <li>Status: em andamento (2021)</li>
-            </ul>
-        </section>
-        <section id="extracurricular">
-            <h2>Atividades Complementares</h2>
-            <h3>Cursos Extracurriculares</h3>
-            <ul>
-                <li>Bootcamp IGTI - Front-end</li>
-                <li>ELAS Programando com o App Inventor</li>
-            </ul>
-            <h3>Palestras e Eventos</h3>
-            <ul>
-                <li>Desafio de Programação</li>
-                <li>Soft skills - Sebrae</li>
-            </ul>
-        </section>
+      <section id="education">
+        <h2>Formação Acadêmica</h2>
+        <h3>UFMS</h3>
+        <ul>
+          <li>Nível: graduação</li>
+          <li>Curso: Engenharia de Software</li>
+          <li>Status: formada (2021)</li>
+        </ul>
+        <h3>XP Educação</h3>
+        <ul>
+          <li>Nível: pós-graduação</li>
+          <li>Curso: Desenvolvimento Front-End</li>
+          <li>Status: em andamento (2023)</li>
+        </ul>
+      </section>
+      <section id="extracurricular">
+        <h2>Atividades Complementares</h2>
+        <h3>Cursos Extracurriculares</h3>
+        <ul>
+          <li>Bootcamp IGTI - Front-end</li>
+          <li>ELAS Programando com o App Inventor</li>
+        </ul>
+        <h3>Palestras e Eventos</h3>
+        <ul>
+          <li>Desafio de Programação</li>
+          <li>Soft skills - Sebrae</li>
+        </ul>
+      </section>
     </main>
     <footer id="footer">
-        <div id="footer__social-medias">
-            <a href="https://www.facebook.com/larissa.fraga.942"><img class="footer__social-medias_icons" src="src/img/facebook.svg" alt="facebook" /></a>
-            <a href="https://github.com/LarissaFraga"><img class="footer__social-medias_icons" src="src/img/github.svg" alt="github" /></a>
-            <a href="https://www.linkedin.com/in/larissa-fraga-a367aa152/"><img class="footer__social-medias_icons" src="src/img/linkedin.svg" alt="linkedin" /></a>
-        </div>
-        <div id="footer__email-phone">
-            <p>Email: larissa.fra345@gmail.com</p>
-            <p>Telefone: +55 67 98422-0139</p>
-        </div>
-        <div id="footer__copyrights">
-            <p>Larissa &copy; todos os direitos reservados</p>
-        </div>
+      <div id="footer__social-medias">
+        <a href="https://www.facebook.com/larissa.fraga.942"
+          ><img
+            class="footer__social-medias_icons"
+            src="src/img/facebook.svg"
+            alt="facebook"
+        /></a>
+        <a href="https://github.com/LarissaFraga"
+          ><img
+            class="footer__social-medias_icons"
+            src="src/img/github.svg"
+            alt="github"
+        /></a>
+        <a href="https://www.linkedin.com/in/larissa-fraga-a367aa152/"
+          ><img
+            class="footer__social-medias_icons"
+            src="src/img/linkedin.svg"
+            alt="linkedin"
+        /></a>
+      </div>
+      <div id="footer__email-phone">
+        <p>Email: larissa.fra345@gmail.com</p>
+        <p>Telefone: +55 67 98422-0139</p>
+      </div>
+      <div id="footer__copyrights">
+        <p>Larissa &copy; todos os direitos reservados</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

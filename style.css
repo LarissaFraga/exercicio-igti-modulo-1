@@ -19,7 +19,7 @@ header {
   top: 0;
 }
 header nav {
-  background-color: #af2bcf;
+  background-color: rgb(175, 43, 207);
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
@@ -49,7 +49,7 @@ header nav a {
 
 #quote {
   grid-area: quote;
-  background-color: #710080;
+  background-color: rgb(113, 0, 128);
   text-align: center;
   color: white;
   padding: 20px 0;
@@ -59,7 +59,7 @@ header nav a {
 }
 
 #job-exp {
-  background-color: #ececec;
+  background-color: rgb(236, 236, 236);
   grid-area: job-exp;
   padding: 20px;
 }
@@ -74,7 +74,7 @@ header nav a {
 #job-exp #job-exp__experience .job-exp__jobs {
   border-radius: 10px;
   padding: 10px;
-  background-color: #ddaffc;
+  background-color: rgb(221, 175, 252);
 }
 #job-exp #job-exp__experience .job-exp__jobs .job-exp__company-logo {
   max-width: 100px;
@@ -103,12 +103,12 @@ header nav a {
 
 #extracurricular {
   grid-area: extracurricular;
-  background-color: #ddaffc;
+  background-color: rgb(221, 175, 252);
   padding: 20px;
 }
 
 footer {
-  background-color: #9d9cb5;
+  background-color: rgb(157, 156, 181);
   display: flex;
   color: black;
   padding: 10px 50px;
@@ -124,12 +124,11 @@ footer #footer__email-phone p {
   margin: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 656px) {
   main {
     grid-template-columns: 100%;
     grid-template-areas: "main-title" "about" "quote" "job-exp" "skills" "education" "extracurricular";
   }
-
   #about {
     flex-flow: column wrap;
     justify-content: center;
@@ -141,12 +140,10 @@ footer #footer__email-phone p {
   #about #about__text-cnt {
     padding: 20px;
   }
-
   #job-exp #job-exp__experience {
     grid-template-columns: 100%;
     grid-template-areas: "job1" "job2";
   }
-
   #footer {
     flex-flow: column wrap;
   }
